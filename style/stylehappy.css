@@ -1,0 +1,57 @@
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+/*Listed selectors separated by ,*/
+li {
+    font-size: 30px;
+    /* line-height: 2; */
+    letter-spacing: 0.5px;  
+}
+.classone {
+    color: white;
+    /* padding: 10px; */
+    font-style:bold;
+}
+/*Class selector starts with .*/
+
+/*Combined selectors */
+
+li.classone{
+    font-size:30px;
+
+    /* font-style:italic; */
+    color: black;
+    /* margin-left: 10px; */
+}
+.classtwo{
+    font-size:25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left:-5px;
+}
+.classthree{
+    font-style:bold;
+    margin-left:5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+/* html covers the whole page! */
+html { 
+    /* min-height:100% */
+    background-color: rgb(146, 53, 184);
+    /* background-color: rebeccapurple; */
+ } 
+
+/* body covers nearly the whole page...*/
+body {
+     background-color: rgb(24, 238, 238); 
+    width: 800px; 
+    border:white solid 10px;
+    margin:auto;
+    padding: 50px 20px;
+}
+
+#headerID{
+    font-size:50px;
+    margin-left:170px;
+    margin-top:-30px;
+}
