@@ -1,0 +1,95 @@
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+/*Listed selectors separated by ,*/
+li {
+    font-size: 30px;
+    /* line-height: 2; */
+    letter-spacing: 0.5px;  
+}
+.classone {
+    color: white;
+    /* padding: 10px; */
+    font-style:bold;
+}
+.classtwo{
+    color: white;
+    font-size:40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center; 
+}
+
+  
+.vertical-center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height:150px;
+    width: 300px;
+  }
+.vertical-center2 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-110%);
+    height:50px;
+    width: 100px;
+  }
+.vertical-center3{
+    position: relative;
+    left: 50%;
+    transform: translateX(-95%);
+    height:25px;
+    width: 150px;
+}
+  #Div {
+    width: 300px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+    transform: translateX(100%);
+    /* margin-left:250px; */
+  }
+  #SandH{
+    margin-top: 10px;
+    height: 75px;
+    padding: 15px;
+  }
+
+
+
+
+
+
+/*Class selector starts with .*/
+
+/*Combined selectors */
+
+
+
+
+/* html covers the whole page! */
+html { 
+    /* min-height:100% */
+    /* background-color: rgb(146, 53, 184); */
+    background-image: url('BCA.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    /* background-color: rebeccapurple; */
+ } 
+
+/* body covers nearly the whole page...*/
+body {
+     /* background-color: rgb(242, 242, 242);  */
+    width: 900px; 
+    border:white solid 10px;
+    margin:auto;
+    padding: 50px 20px;
+}
+
+#headerID{
+    font-size:50px;
+    margin-left:170px;
+    margin-top:-30px;
+}
