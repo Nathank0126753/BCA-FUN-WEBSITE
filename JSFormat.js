@@ -1,4 +1,4 @@
-function hideFunction(){
+function hideFunction(Identifier){
    if (document.querySelector("#SandH").textContent == "Show Password"){
      document.querySelector("#SandH").textContent = "Hide Password";
    }
@@ -6,29 +6,19 @@ function hideFunction(){
     document.querySelector("#SandH").textContent = "Show Password";
   }
   
-  var x = document.querySelector("#Div");
-  if (x.getAttribute("hidden")){
-    x.removeAttribute("hidden");
-  }
-  else{
-    x.setAttribute("hidden", "hidden");
-  }
-
-  var y = document.querySelector("#TextOne");
-  if (y.getAttribute("hidden")){
-    y.removeAttribute("hidden");
-  }
-  else{
-    y.setAttribute("hidden", "hidden");
+  var x = document.getElementsByClassName("Web" + Identifier);
+  for (var i = 0; i <x.length; i++){
+    if (x.item(i).getAttribute("hidden")){
+      x.item(i).removeAttribute("hidden");
+    }
+    else{
+      x.item(i).setAttribute("hidden", "hidden");
+    }
   }
   
-  var z = document.querySelector("#PWButton");
-  if (z.getAttribute("hidden")){
-    z.removeAttribute("hidden");
-  }
-  else{
-    z.setAttribute("hidden", "hidden");
-  }
+  
+
+
 //   if (x.style.display === "none") {
     // x.style.display = "block";
 //   } else {
@@ -37,8 +27,16 @@ function hideFunction(){
 
   
 }
-function ifButtonClicked(){
-    document.getElementById("Div").textContent = "Password: " + document.querySelector("#TextOne").value;
+function ifButtonClicked(Identifier2){
+  var x = document.getElementsByClassName("Web" + Identifier2);
+  x.namedItem("Div").textContent = "Password: " + x.namedItem("TextOne").value;
+  //for (var i = 0; i <x.length; i++){
+  //  if (x.item(i).id == "Div"){
+  //    x.item(i).textContent = "Password:" +
+  //  }
+  //  
+  //}
+    //document.getElementById("Div").textContent = "Password: " + document.querySelector("#TextOne").value;
 }
-let PWButton = document.getElementById("PWButton");
-PWButton.addEventListener("click", ifButtonClicked );
+//let PWButton = document.getElementById("PWButton");
+//PWButton.addEventListener("click", ifButtonClicked );

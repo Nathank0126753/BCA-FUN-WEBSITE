@@ -14,28 +14,34 @@ li {
     font-style:bold;
 }
 .classtwo{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size:40px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: center; 
 }
-
-  
-.vertical-center {
+#SandH{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     height:150px;
     width: 300px;
-  }
-.vertical-center2 {
+}
+#LinkButton{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height:150px;
+    width: 300px;
+}
+
+  #PWButton{
     position: relative;
     left: 50%;
     transform: translateX(-110%);
     height:50px;
     width: 100px;
   }
-.vertical-center3{
+  #TextOne{
     position: relative;
     left: 50%;
     transform: translateX(-95%);
@@ -75,7 +81,7 @@ html {
     /* background-color: rgb(146, 53, 184); */
     background-image: url('BCA.png');
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size:cover;
     /* background-color: rebeccapurple; */
  } 
 
