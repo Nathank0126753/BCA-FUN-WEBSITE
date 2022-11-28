@@ -9,14 +9,17 @@ li {
     letter-spacing: 0.5px;  
 }
 .classone {
-    color: white;
+    padding-top: 50px;
+    color: rgb(255, 255, 255);
+    font-family:cursive;
     /* padding: 10px; */
     font-style:bold;
+    text-align: center; 
 }
 .classtwo{
     color: rgb(255, 255, 255);
     font-size:40px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:cursive;
     text-align: center; 
 }
 #SandH{
@@ -25,6 +28,7 @@ li {
     transform: translateX(-50%);
     height:150px;
     width: 300px;
+    font-family:cursive;
 }
 #LinkButton{
     position: relative;
@@ -32,6 +36,10 @@ li {
     transform: translateX(-50%);
     height:150px;
     width: 300px;
+    font-family:cursive;
+    color:aliceblue;
+    background-color: rgb(84, 82, 82);
+    font-size: 30px;
 }
 
   #PWButton{
@@ -40,27 +48,36 @@ li {
     transform: translateX(-110%);
     height:50px;
     width: 100px;
+    font-family:cursive;
   }
-  #TextOne{
+  #Text{
     position: relative;
     left: 50%;
     transform: translateX(-95%);
     height:25px;
     width: 150px;
+    font-family:cursive;
 }
   #Div {
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    color:white;
     width: 300px;
     padding: 20px 0;
     text-align: center;
-    background-color: lightblue;
+    background-color: rgb(0, 0, 0);
     margin-top: 20px;
-    transform: translateX(100%);
+    /* left: 100%; */
+    /* transform: translateX(100%); */
+    font-family:cursive;
     /* margin-left:250px; */
   }
   #SandH{
     margin-top: 10px;
     height: 75px;
     padding: 15px;
+    font-family:cursive;
   }
 
 
@@ -79,23 +96,28 @@ li {
 html { 
     /* min-height:100% */
     /* background-color: rgb(146, 53, 184); */
-    background-image: url('BCA.png');
-    background-repeat: no-repeat;
-    background-size:cover;
+    /* background-image: url('BCA.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-size:cover; */
+    background-color: black;
     /* background-color: rebeccapurple; */
  } 
 
 /* body covers nearly the whole page...*/
 body {
      /* background-color: rgb(242, 242, 242);  */
-    width: 900px; 
-    border:white solid 10px;
+    /* width: 900px;  */
+    min-height: 100%;
+    min-width: 100%;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    /* border:white solid 10px; */
     margin:auto;
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
 }
 
 #headerID{
     font-size:50px;
-    margin-left:170px;
     margin-top:-30px;
 }

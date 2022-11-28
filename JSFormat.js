@@ -36,7 +36,7 @@ function resetAllButtons(){
 resetAllButtons();
 function ifButtonClicked(Identifier2){
   var x = document.getElementsByClassName("Web" + Identifier2);
-  localStorage.setItem("pw" + Identifier2, x.namedItem("TextOne").value);
+  localStorage.setItem("pw" + Identifier2, x.namedItem("Text").value);
   x.namedItem("Div").textContent = "Password: " + localStorage.getItem("pw" + Identifier2);
 
   //for (var i = 0; i <x.length; i++){
@@ -47,6 +47,21 @@ function ifButtonClicked(Identifier2){
   //}
     //document.getElementById("Div").textContent = "Password: " + document.querySelector("#TextOne").value;
 }
+var currentTime = new Date().getHours();
+
+  if (7 <= currentTime && currentTime < 20) {
+      document.body.background = "day.jpg";
+      
+      
+      
+      // document.body.background repeat: no-repeat;
+        /* background-repeat: no-repeat; */
+  /* background-size:cover; */
+  }
+  else {
+      document.body.background = "night.jpg";
+  }
+
 
 //let PWButton = document.getElementById("PWButton");
 //PWButton.addEventListener("click", ifButtonClicked );
