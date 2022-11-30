@@ -50,7 +50,7 @@ function ifButtonClicked(Identifier2){
 
 // var timeChange = 1;
 var currentTime = new Date().getHours();
-  if (7 <= currentTime && currentTime < 20 || timeChange > 0) {
+  if (7 <= currentTime && currentTime < 20) {
       document.body.background = "day.jpg";
       var elements = document.querySelectorAll('[name="UniversalChange"]');
       for (var i = 0; i < elements.length; i++) {
