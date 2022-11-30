@@ -47,10 +47,16 @@ function ifButtonClicked(Identifier2){
   //}
     //document.getElementById("Div").textContent = "Password: " + document.querySelector("#TextOne").value;
 }
-var currentTime = new Date().getHours();
 
-  if (7 <= currentTime && currentTime < 20) {
+// var timeChange = 1;
+var currentTime = new Date().getHours();
+  if (7 <= currentTime && currentTime < 20 || timeChange > 0) {
       document.body.background = "day.jpg";
+      var elements = document.querySelectorAll('[name="UniversalChange"]');
+      for (var i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundColor= 'Pink';
+        elements[i].style.color= 'Black';
+      }
       
       
       
@@ -60,8 +66,17 @@ var currentTime = new Date().getHours();
   }
   else {
       document.body.background = "night.jpg";
-  }
+      var elements = document.querySelectorAll('[name="UniversalChange"]');
+      for (var i = 0; i < elements.length; i++) {
+        elements[i].style.backgroundColor= 'rgb(84, 82, 82)';
+        elements[i].style.color= 'White';
+      }
+    }
 
 
 //let PWButton = document.getElementById("PWButton");
 //PWButton.addEventListener("click", ifButtonClicked );
+
+// function changeTime(){
+//   timeChange *= -1;
+// }
