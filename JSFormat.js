@@ -1,10 +1,10 @@
 function hideFunction(Identifier){
-   if (document.querySelector("#SandH").textContent == "Show Password"){
-     document.querySelector("#SandH").textContent = "Hide Password";
-   }
-  else{
-    document.querySelector("#SandH").textContent = "Show Password";
-  }
+  //  if (document.querySelector("#SandH").textContent == "Show Password"){
+    //  document.querySelector("#SandH").textContent = "Hide Password";
+  //  }
+  // else{
+    // document.querySelector("#SandH").textContent = "Show Password";
+  // }
   
   var x = document.getElementsByClassName("Web" + Identifier);
   for (var i = 0; i <x.length; i++){
